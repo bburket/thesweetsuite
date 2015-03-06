@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Tools : Sweet Suite</title>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link rel="stylesheet" href="/stylesheets/home.css" />
+    <link rel="stylesheet" href="/stylesheets/prettify/prettify.css" />
+    <base href="/"/>
+</head>
+<body ng-app="sweetSuite">
+
+    <div ng-controller="mainController as main" class="container-fluid">
+        <div id="header-row" class="row">
+            <div class="col-md-12" id="header"><h1>Lets put something snazzy here</h1></div>
+        </div>
+        <div class="row" id="main-body-container">
+            <div class="col-md-2 col-sm-3" id="left-rail">
+                <div id="left-nav-list" class="list-group">
+                    <a ng-repeat="plugin in main.plugins | object2Array | orderBy: 'orderId'" ng-href="/{{plugin.navUrl}}" class="list-group-item {{ (plugin.key == main.selectedPlugin.key) ? 'active' : '' }}" ng-click="pluginNavClick(plugin)">{{ plugin.displayName }}</a>
+                </div>
+            </div>
+            <div class="col-md-10 col-sm-9" id="main-body">
+                <div id="plugin-container" ng-view></div>
+            </div>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular-route.js"></script>
+
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/module.js"></script>
+    <script src="/scripts/mainController.js"></script>
+    <script src="/scripts/homeController.js"></script>
+    <script src="/scripts/guidgenController.js"></script>
+    <script src="/scripts/uuid.min.js"></script>
+    <script src="/scripts/jsonPrettyPrintController.js"></script>
+    <script src="/scripts/ipsumController.js"></script>
+    <script src="/scripts/prettify/prettify.js"></script>
+    <script src="/scripts/prettify/run_prettify.js"></script>
+    <script src="/scripts/viewsourceController.js"></script>
+</body>
+</html>
+
+

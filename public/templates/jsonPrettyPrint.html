@@ -1,0 +1,5 @@
+﻿<div id="json-print-container" ng-controller="jsonPrettyPrintController as prettyPrint">
+    <textarea id="json-text" ng-model="prettyPrint.jsonText"></textarea>
+    <button id="json-ok" ng-click="prettyPrint.processText()" class="btn btn-success">Make it Pretty</button>
+    <div id="json-results-container"></div>
+</div>

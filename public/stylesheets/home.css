@@ -1,0 +1,34 @@
+﻿body {
+  font-family: 'Segoe UI';
+}
+#header {
+  height: 200px;
+  width: 100%;
+  border: 2px solid black;
+}
+#plugin-container {
+  min-height: 200px;
+}
+#json-print-container #json-results-container .number {
+  color: green;
+}
+#json-print-container #json-results-container .string {
+  color: #a52a2a;
+}
+#json-print-container #json-results-container .key {
+  color: black;
+}
+#json-print-container #json-results-container .null {
+  color: blue;
+}
+#json-print-container #json-results-container .boolean {
+  color: darkcyan;
+}
+#json-print-container #json-text {
+  width: 600px;
+  height: 400px;
+}
+#json-print-container #json-ok {
+  display: block;
+}
+/*# sourceMappingURL=home.css.map */
