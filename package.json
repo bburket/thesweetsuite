@@ -4,7 +4,8 @@
   "description": "Suite of http tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bburket/thesweetsuite/issues"
   },
-  "homepage": "https://github.com/bburket/thesweetsuite#readme"
+  "homepage": "https://github.com/bburket/thesweetsuite#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.3.9"
+  }
 }
