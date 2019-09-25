@@ -1,18 +1,19 @@
 {
-  "name": "helloworld",
-  "version": "0.0.0",
-  "private": true,
+  "name": "thesweetsuite",
+  "version": "1.0.0",
+  "description": "Suite of http tools",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "express": "~4.8.6",
-    "body-parser": "~1.6.6",
-    "cookie-parser": "~1.3.2",
-    "morgan": "~1.2.3",
-    "serve-favicon": "~2.0.1",
-    "debug": "~1.0.4",
-    "jade": "~1.5.0",
-    "lorem-ipsum": "~1.0.1"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bburket/thesweetsuite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bburket/thesweetsuite/issues"
+  },
+  "homepage": "https://github.com/bburket/thesweetsuite#readme"
 }

@@ -1,1 +1,3 @@
-# http://www.thesweetsuite.net
+# https://www.thesweetsuite.net
+
+Suite of http tools
