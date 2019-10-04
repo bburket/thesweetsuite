@@ -1,3 +1,4 @@
 import doStuff from './doStuff'
 
-document.getElementById("test").innerText = doStuff("Bill")
+let text = "this is it";
+document.getElementById("test").innerText = doStuff(text)
