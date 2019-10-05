@@ -19,7 +19,19 @@ module.exports = (env, argv) => {
         template: 'index.html'
       })
     ],
-    devtool: argv.mode === 'production' ? null : 'source-map'
+    devtool: argv.mode === 'production' ? null : 'source-map',
+    module: {
+      rules: [
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: "babel-loader"
+          }
+        }
+      ]
+    }
+  
  
   } 
 

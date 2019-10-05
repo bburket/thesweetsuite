@@ -1,4 +1,8 @@
-import doStuff from './doStuff'
+import DoStuff from './dostuff.jsx'
+import ReactDOM from "react-dom";
 
-let text = "this is it";
-document.getElementById("test").innerText = doStuff(text)
+ReactDOM.render(
+    <DoStuff title="bilbo baggins" />,
+    document.getElementById('root')
+  );
+  
