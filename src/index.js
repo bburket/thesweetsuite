@@ -1,10 +1,10 @@
-import React from "react"
-import DoStuff from './dostuff.jsx'
+import React from "react";
 import ReactDOM from "react-dom";
-import '../css/main.scss';
-import "bootstrap";
+import DoStuff from './dostuff.jsx'
+
+
 ReactDOM.render(
     <DoStuff title="bilbo baggins" />,
     document.getElementById('root')
-  );
+);
   

@@ -5,10 +5,13 @@ const HtmlWebpackPlugin  = require('html-webpack-plugin')
 module.exports = (env, argv) => {
   console.log(`${argv.mode}`)
   const output = {
-    entry: './src/index.js',
+    entry: {
+      app: './src/index.js',
+      bootstrap: './src/bootstrap.js',
+    },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: '[hash].bundle.js'
+      filename: '[name].[hash].bundle.js'
     },
     devServer: {
       contentBase: path.join(__dirname, 'dist')
