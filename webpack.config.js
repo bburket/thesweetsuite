@@ -19,7 +19,6 @@ module.exports = (env, argv) => {
         template: 'index.html'
       })
     ],
-    devtool: argv.mode === 'production' ? null : 'source-map',
     module: {
       rules: [
         {
@@ -28,13 +27,27 @@ module.exports = (env, argv) => {
           use: {
             loader: "babel-loader"
           }
-        }
+        },
+        {
+          test: /\.s[ac]ss$/i,
+          use: [
+            // Creates `style` nodes from JS strings
+            'style-loader',
+            // Translates CSS into CommonJS
+            'css-loader',
+            // Compiles Sass to CSS
+            'sass-loader',
+          ],
+        },
       ]
     }
   
  
   } 
 
+  if (argv.mode === "development") {
+    output.devtool = "source-map";
+  }
   console.log(`output ${JSON.stringify(output)}`)
   return output;
 };
