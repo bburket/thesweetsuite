@@ -1,5 +1,15 @@
 @import "~bootstrap";
 
+$bgcolor: rgb(54, 54, 54);
+
+body {
+    background-color: $bgcolor
+}
+
+h1 h2 h3 {
+    padding: none;
+}
+
 h3 {
     color:green;
 }
